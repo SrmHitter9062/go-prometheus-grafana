@@ -7,8 +7,10 @@ This is about data or information is collected by prometheus and sent to grafana
 
 On initialisation client_golang registers 2 Prometheus collectors:
 
-# Process Collector – which collects basic Linux process information like CPU, memory, file descriptor usage and start time.
-# Go Collector – which collects information about Go’s runtime like details about GC, number of gouroutines and OS threads.
+## Process Collector –
+ which collects basic Linux process information like CPU, memory, file descriptor usage and start time.
+## Go Collector – 
+which collects information about Go’s runtime like details about GC, number of gouroutines and OS threads.
 Process Collector
 What this collector does is reads proc file system. proc file system exposes internal kernel data structures, which is used to obtain information about the system.1
 
