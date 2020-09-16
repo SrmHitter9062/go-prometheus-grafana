@@ -11,7 +11,9 @@ On initialisation client_golang registers 2 Prometheus collectors:
  which collects basic Linux process information like CPU, memory, file descriptor usage and start time.
 ## Go Collector – 
 which collects information about Go’s runtime like details about GC, number of gouroutines and OS threads.
-Process Collector
+
+
+## Process Collector
 What this collector does is reads proc file system. proc file system exposes internal kernel data structures, which is used to obtain information about the system.1
 
 So Prometheus client reads /proc/PID/stat file, which looks like this:
